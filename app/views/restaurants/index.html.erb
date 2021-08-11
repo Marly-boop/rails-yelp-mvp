@@ -1,0 +1,8 @@
+<h1>All Restaurants list</h1>
+<h3><%= link_to "To create a new task click click click", new_restaurant_path%></h3>
+
+<%@restaurants.each do |restau|%>
+<ul>
+<li><%= link_to restau.name, restaurant_path(restau)%></li>
+</ul>
+<% end %>
